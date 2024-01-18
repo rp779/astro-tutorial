@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import Baselayout from "../layouts/Baselayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "About Me";
 
@@ -22,7 +22,7 @@ const fontWeight = "bold";
 const textCase = "uppercase";
 ---
 
-<Baselayout pageTitle={pageTitle}>
+<BaseLayout pageTitle={pageTitle}>
     <style define:vars={{ skillColor, fontWeight, textCase }}>
         .skill {
             color: var(--skillColor);
@@ -69,4 +69,4 @@ const textCase = "uppercase";
             <p>My goal is not 3 days.</p>
         )
     }
-</Baselayout>
+</BaseLayout>
